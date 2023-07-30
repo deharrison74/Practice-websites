@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Website1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="hero">
+
+
+               <video autoplay loop muted plays-inline id="backVideo">
+                  <source src="images/video.mp4">
+               </video>
+
+            <img src="images/hamburger.png" class="menu-icon">
+        
+            <div class="sidebar">
+                   <div class="top-links">
+                       <img src="images/arrow.png" class="arrow-icon">
+                       <div>
+                       <img src="images/audio.png">
+                       <img src="images/link.png">
+                       </div>
+                    </div>
+            
+            <h1>Konoha</h1>
+            <h3>Land of fire</h3>
+            <p> Konoha Village, also known as the Hidden Leaf Village, is a prominent fictional village in the Naruto series 
+                created by Masashi Kishimoto. It is the main setting for much of the story and serves as the home of many 
+                iconic ninja characters. Konoha is known for its strong ninja traditions, breathtaking architecture, and 
+                the iconic Hokage Monument, which honors the village's powerful leaders.</p>
+
+            <a href="#">More Details</a>
+            
+            </div>
+
+            <img src="images/play.png" id="btn">
+
+        </div>    
+       
+        <script>
+
+                 let backVideo = document.getElementById("backVideo");
+                 let btn = document.getElementById("btn");
+
+                 btn.onclick = function(){
+                    backVideo.style.display = "block";
+
+                    if(backVideo.paused){
+                        backVideo.play();
+                        btn.src = "images/pause.png";
+                    }
+                    else{
+                        backVideo.pause();
+                        btn.src = "images/play.png";
+                    }
+                        
+                    }
+                
+
+        </script>
+
+
+    </body>
+</html>
